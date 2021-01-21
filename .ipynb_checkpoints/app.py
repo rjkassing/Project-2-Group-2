@@ -10,12 +10,13 @@ from sqlalchemy import create_engine
 rds_connection_string = "postgres:PostgreSQL@localhost:5432/Coders_D2"
 engine = create_engine(f'postgresql://{rds_connection_string}')
 
-base=automap_base()
-base.prepare(engine, reflect=True)
-# coders_d=base.classes.coders_d while is this line not being read?
+# Base= automap_base()
+# Base.prepare(engine, reflect=True)
+# Coders_d= Base.classes.coders_d 
 
-app = Flask(__name__)
 session = Session(engine)
+app = Flask(__name__)
+# session = Session(engine)
 
 @app.route("/")
 def mainpage():
