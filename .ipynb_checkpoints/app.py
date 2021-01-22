@@ -26,5 +26,34 @@ def mainpage():
        "Hello"
 )
 
+@app.route("/about_us")
+def about_us():
+     return (
+       "About Us"
+)
+
+@app.route("/countries")
+def countries():
+     return (
+       "Country Data"
+)
+
+@app.route("/income")
+def income():
+    return (
+       "Income Data"
+)
+@app.route("/diversity")
+def income():
+    return (
+       "Diversity Data"
+)
+
+@app.route("/data")
+def data(): 
+    return (
+       "Data File"
+)
+
 if __name__ == '__main__':
     app.run(debug=True)
