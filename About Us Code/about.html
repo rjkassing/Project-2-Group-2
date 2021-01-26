@@ -1,15 +1,53 @@
 <!DOCTYPE html>
-<!-- CSS Stylesheets with Relative Paths -->
 <html lang="en-us">
+
+<!---Bootstrap and CSS-->
 <head>
   <meta charset="UTF-8">
-  <title>CSS Stylesheets with Relative Paths</title>
-
-  <!-- This line is money! It points your HTML to the CSS file. -->
-  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>About Us</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
+<!---NAV BAR-->
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="..\landing.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse active" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="..\About Us Code\about.html">About Us</a>
+        </li>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="..\Map\index.html">Countries</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="..\Income_SZ\income_index.html">Income</a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Diversity in Tech
+        </a>
+        <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item active" href="Tech Company Race\Race Results\index.html">Tech Company Race Results</a>
+          <a class="dropdown-item active" href="Tech Company Race\Filtered Asian Rate Above 30%\index.html">Asian Rates above 30%</a>
+        </div>
+      </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="..\data.html" tabindex="-1" aria-disabled="true">Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!---Main Content-->
 <body>
 
   <header>
@@ -19,7 +57,7 @@
   <main class="container">
     <section id="main-bio">
       <section id="figure">
-        <img id="bio-image" src="C:\Users\derek\Desktop\Rick_GT_Classwork\Cloned_Repos\Project-2-Group-2\About Us Code\Images\LindseyHoffman.png" alt="LindseyHoffman">
+        <img id="bio-image" src="Images\LindseyHoffman.png" alt="LindseyHoffman">
       </section>
       <h2>Lindsey Hoffman</h2>
       <ul>
@@ -30,7 +68,7 @@
 
     <section id="main-bio">
       <section id="figure">
-        <img id="bio-image" src="C:\Users\derek\Desktop\Rick_GT_Classwork\Cloned_Repos\Project-2-Group-2\About Us Code\Images\MiaIsreal.PNG" alt="MiaIsreal.PNG">
+        <img id="bio-image" src="Images\MiaIsreal.PNG" alt="MiaIsreal.PNG">
       </section>
       <h2>Mia Israel</h2>
       <ul>
@@ -41,7 +79,7 @@
 
     <section id="main-bio">
       <section id="figure">
-        <img id="bio-image" src="C:\Users\derek\Desktop\Rick_GT_Classwork\Cloned_Repos\Project-2-Group-2\About Us Code\Images\ZiJin.JPG" alt="Your Name">
+        <img id="bio-image" src="Images\ZiJin.JPG" alt="Your Name">
       </section>
       <h2>Zi Jin</h2>
       <ul>
@@ -51,7 +89,7 @@
     </section>
 
     <section id="figure">
-        <img id="bio-image" src="C:\Users\derek\Desktop\Rick_GT_Classwork\Cloned_Repos\Project-2-Group-2\About Us Code\Images\RickKassing.JPG" alt="Your Name">
+        <img id="bio-image" src="Images\RickKassing.JPG" alt="Your Name">
       </section>
       <h2>Rick Kassing</h2>
       <ul>
@@ -62,7 +100,7 @@
 
     <section id="main-bio">
       <section id="figure">
-        <img id="bio-image" src="C:\Users\derek\Desktop\Rick_GT_Classwork\Cloned_Repos\Project-2-Group-2\About Us Code\Images\LisaRios.jpg" alt="Your Name">
+        <img id="bio-image" src="Images\LisaRios.jpg" alt="Your Name">
       </section>
       <h2>Lisa Rios</h2>
       <ul>
@@ -73,7 +111,7 @@
 
     <section id="main-bio">
       <section id="figure">
-        <img id="bio-image" src="C:\Users\derek\Desktop\Rick_GT_Classwork\Cloned_Repos\Project-2-Group-2\About Us Code\Images\StephanieZhu.png" alt="Your Name">
+        <img id="bio-image" src="Images\StephanieZhu.png" alt="Your Name">
       </section>
       <h2>Stephanie Zhu</h2>
       <ul>
