@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diversity in Tech Companies</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+</head>
+<body>
+
+    <div class="container">
+    
+        <div class="row">
+        <div class="col-md-12 jumbotron text-center">
+          <h2>Diversity in Tech Companies</h2>
+          <p>Use the interactive charts below to explore gender and race diversity in major Tech Companies</p>
+        </div>
+      </div>
+     
+    <div class="row">  
+        <div class="col-md-2">
+         <div class="well">  
+            <h5>Tech Company</h5> 
+            <select id="selDataset" onchange="getData(this.value)">
+                <option value="AirBnB">AirBnB</option>
+                <option value="Amazon">Amazon</option>
+                <option value="Apple">Apple</option>
+                <option value="Dell">Dell</option>
+                <option value="Etsy">Etsy</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Flickr">Flickr</option>
+                <option value="Google">Google</option>
+                <option value="Google_plus">Google_plus</option>
+                <option value="Groupon">Groupon</option>
+                <option value="HP">HP</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Intel">Intel</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="Microsoft">Microsoft</option>
+                <option value="Netflix">Netflix</option>
+                <option value="Salesforce">Salesforce</option>
+                <option value="Twitter">Twitter</option>
+                <option value="Uber">Uber</option>
+                <option value="eBay">eBay</option>
+                <option value="Youtube">Youtube</option>
+                <option value="Yelp">Yelp</option>
+                <option value="Yahoo">Yahoo</option>
+                <option value="Slack">Slack</option>
+                <option value="Pinterest">Pinterest</option>
+                <option value="Indiegogo">Indiegogo</option>
+                <option value="Nvidia">Nvidia</option>
+                <option value="Pandora">Pandora</option>
+                <option value="Tumblr">Tumblr</option>
+
+            </select>
+         </div>
+       </div>
+        <div class="col-md-5">
+            <div id="pie"></div>
+        </div>
+        <div class="col-md-5">
+            <div id="plot"></div>
+          </div>
+    </div>
+
+
+</div>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="data.js"></script>
+    <script src="plots.js"></script>
+</body>
+</html>
