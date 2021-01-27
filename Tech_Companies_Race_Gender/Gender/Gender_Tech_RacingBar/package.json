@@ -1,0 +1,14 @@
+{
+  "name": "0e7c8e4828f330a1",
+  "main": "0e7c8e4828f330a1@3043.js",
+  "version": "3043.0.0",
+  "homepage": "https://observablehq.com/d/0e7c8e4828f330a1",
+  "author": {
+    "name": "Lisa Rios",
+    "url": "https://observablehq.com/@lisarios"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
