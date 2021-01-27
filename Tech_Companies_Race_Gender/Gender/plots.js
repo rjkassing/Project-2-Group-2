@@ -60,9 +60,10 @@ function init() {
   }];
 
   var layout = {
-    title: 'Gender Diversity',
+    title: 'Gender Diversity: 2018',
     height: 400,
-    width: 600
+    width: 600,
+    margin: {"t":0, "b": 0, "1": 0, "r":0}
   };
 
   Plotly.newPlot("pie", data, layout);

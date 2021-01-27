@@ -1,0 +1,75 @@
+:root{
+    --syntax_normal: black;
+    --syntax_comment:black;
+    --syntax_number:black;
+    --syntax_keyword:#000000;
+    --syntax_atom:black;
+    --syntax_string:black;
+    --syntax_error:black;
+    --syntax_unknown_variable:black;
+    --syntax_known_variable:black;
+    --syntax_matchbracket:black;
+    --syntax_key:black;
+    --mono_fonts:82%/1.5 Menlo,Consolas,monospace
+}
+.observablehq--collapsed,.observablehq--expanded,.observablehq--function,.observablehq--gray,.observablehq--import,.observablehq--string:after,.observablehq--string:before{
+    color:var(--syntax_normal)
+}
+.observablehq--collapsed,.observablehq--inspect a{
+    cursor:pointer
+}
+.observablehq--field{
+    text-indent:-1em;
+    margin-left:1em
+}
+.observablehq--empty{
+    color:black
+}
+.observablehq--blue,.observablehq--keyword{
+    color:black
+}
+.observablehq--forbidden,.observablehq--pink{
+    color:black
+}
+.observablehq--orange{
+    color:black
+}
+.observablehq--boolean,.observablehq--null,.observablehq--undefined{
+    color:black
+}
+.observablehq--bigint,.observablehq--date,.observablehq--green,.observablehq--number,.observablehq--regexp,.observablehq--symbol{
+    color:black
+}
+.observablehq--index,.observablehq--key{
+    color:var(--syntax_key)
+}
+.observablehq--prototype-key{
+    color:black
+}
+.observablehq--empty{
+    font-style:oblique
+}
+.observablehq--purple,.observablehq--string{
+    color:var(--syntax_string)
+}
+.observablehq--error,.observablehq--red{
+    color:black
+}
+.observablehq--inspect{
+    font:var(--mono_fonts);
+    overflow-x:auto;
+    display:block;
+    white-space:pre
+}
+.observablehq--error .observablehq--inspect{
+    word-break:break-all;
+    white-space:pre-wrap
+}
+
+.observablehq--inspect{
+    color: black
+}
+
+.observablehq{
+    color: whitesmoke
+}
