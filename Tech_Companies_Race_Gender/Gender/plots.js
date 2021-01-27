@@ -50,17 +50,17 @@ function init() {
     domain: {column: 0},
     name: 'Gender Diversity',
     marker: {
-      colors: ultimateColors[0]
+      colors: ultimateColors[2]
     },
     hoverinfo: 'label+percent',
-    hole:.4,
+    hole:.5,
     type: "pie"
   }];
 
   var layout = {
     title: 'Gender Diversity',
-    height: 600,
-    width: 800
+    height: 400,
+    width: 600
   };
 
   Plotly.newPlot("pie", data, layout);
