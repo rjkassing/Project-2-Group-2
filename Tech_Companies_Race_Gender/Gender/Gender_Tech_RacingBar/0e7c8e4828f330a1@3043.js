@@ -73,7 +73,7 @@ data.filter(d => d.name === "Heineken")
   
 
   /////////////return # of tech companies//////////////
-  main.variable(observer("n")).define("n", function(){return(20)});
+  main.variable(observer("n")).define("n", function(){return(30)});
   ////////////////////////////////////////////////////
 
 
