@@ -50,11 +50,13 @@ function init() {
     domain: {column: 0},
     name: 'Gender Diversity',
     marker: {
-      colors: ultimateColors[2]
+      colors: ultimateColors[0]
     },
     hoverinfo: 'label+percent',
     hole:.5,
+    showlegend: false,
     type: "pie"
+   
   }];
 
   var layout = {
