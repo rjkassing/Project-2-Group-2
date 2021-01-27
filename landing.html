@@ -5,6 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Coders Dashboard</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="bootstrap.css">
 </head>
@@ -56,6 +57,8 @@
 
   <!---Main Content-->
 <div class= "container">
+  <div class= "row"> 
+    <div class= "col">
         <br>
         <h2>Data Sources</h2>
         <hr>
@@ -83,15 +86,42 @@
               <li>Within the companies who expanded their ethnic diversity, Asian staff accounted for the majority of the increase, while the ratio of Hispanic employees remained static.</li> 
               <li>Apple registered the biggest jump in hiring diversity: 3% increase in Asian hires.</li>
             </ul>
-        <br>   
+    </div> 
+    <div class= "col">
         <h2>Why is Diversity in Tech Important?</h2>
         <hr>
         <p>This video illustrates one perspective on why diversity in tech fields is critical for progress and why this field appeals to so many types of people.<p>
         <br>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/OOQfQwxCOF0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <br>
-        <h2>Data at a Glance</h2>
-        <p> This visualization illustrates the current employment fields of coders who completed the survey. The vast majority of coders are already in the software and engineering field. Other fields include healthcare, education, legal, sales, finance, and transportation.</p>
+        <h2>Survey Data at a Glance</h2>
+        <p> These visualizations illustrate the current employment fields of coders who completed the survey and their current income vs. expected earnings by gender.</p>
+        <br>
+        <!---Pie-->
+        <figure class="highcharts-figure">
+        <div id="container"></div>
+        <p class="highcharts-description">
+          The vast majority of coders are already in the software and engineering field (58.2%). 
+          Other fields include education (7.7%), sales (5.1%), food & beverage (4.8%), and arts, entertainment, sports, & media (4.6%).
+        </p>
+        </figure>
+        <br>  
+        <!---Bar-->
+        <figure class="highcharts-figure">
+        <div id="barchart"></div>
+        <p class="highcharts-description">
+          Participants identifying as Female had the highest reported median income at the time of the survey.
+          Participants who identified as Female or Agender had the highest reported median expected earnings compared to participants identifying as Male, Genderqueer, or Transgender.
+        </p>
+        </figure>
+      </div>
+  
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script type="text/javascript" src="assets/js/app_pie.js"></script>
+    <script type="text/javascript" src="assets/js/app_bar.js"></script>
     </div>
 </body>
 </html>
